@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CIS 468 Assignment #4</title>
+    <style type="text/css">
+        #district-start-end, #district-linked {
+            display: flex;
+        }
+        #ranges{
+            width: 300px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Daily Start & End Choropleths</h1>
+<input id="ranges" type="range" list="tickmarks" min = "1" max = "31" step="1" value="1" oninput="start()">
+<datalist id="tickmarks">
+    <option value="1">
+    <option value="2">
+    <option value="3">
+    <option value="4">
+    <option value="5">
+    <option value="6">
+    <option value="7">
+    <option value="8">
+    <option value="9">
+    <option value="10">
+    <option value="11">
+    <option value="12">
+    <option value="13">
+    <option value="14">
+    <option value="15">
+    <option value="16">
+    <option value="17">
+    <option value="18">
+    <option value="19">
+    <option value="20">
+    <option value="21">
+    <option value="22">
+    <option value="23">
+    <option value="24">
+    <option value="25">
+    <option value="26">
+    <option value="27">
+    <option value="28">
+    <option value="29">
+    <option value="30">
+    <option value="31">
+</datalist>
+<div id="district-start-end">
+    <div id="slider"></div>
+    <div id="day-start-map"></div>
+    <div id="day-end-map"></div>
+</div>
+<h1>Source-Destination Linked Highlighting</h1>
+<div id="district-linked">
+    <div id="linked-start-map"></div>
+    <div id="linked-end-map"></div>
+</div>
+<h1>Network with Map Nodes</h1>
+<div id="map-network"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+<script src="a4.js"></script>
+</body>
+</html>
